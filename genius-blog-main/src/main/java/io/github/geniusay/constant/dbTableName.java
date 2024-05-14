@@ -1,6 +1,6 @@
 package io.github.geniusay.constant;
 
-public class TableName {
+public class dbTableName {
 
     public static final String BLOG = "genius_blog";
 

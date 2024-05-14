@@ -1,2 +1,4 @@
-package io.github.geniusay.service;public interface BlogSerive {
+package io.github.geniusay.service;
+
+public interface IBlogService {
 }
