@@ -104,7 +104,7 @@ jobs:
           
           mkdir docker
           cp ./Dockerfile ./docker
-          cp ./target/*.jar ./docker
+          cp ./genius-blog-main/target/*.jar ./docker
           cd docker
           docker build -t $DOCKER_REPO/$MODULE:$VERSION .
           docker login -u $DOCKER_REPO -p $DOCKER_PASSWORD
