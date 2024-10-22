@@ -1,9 +1,6 @@
 package io.github.geniusay.pojo.bean;
 
-import com.baomidou.mybatisplus.annotation.FieldStrategy;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -12,6 +9,7 @@ import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import io.github.constant.TimeConstant;
 import io.github.geniusay.constant.dbTableName;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -20,12 +18,13 @@ import java.time.LocalDateTime;
 
 @Data
 @Component
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @TableName(value = dbTableName.BLOG_TAG)
 public class BlogTagDO {
 
-    @TableId(value = "id")
+    @TableId(value = "id", type = IdType.AUTO)
     @TableField(updateStrategy = FieldStrategy.NEVER)
     private Long id;
 

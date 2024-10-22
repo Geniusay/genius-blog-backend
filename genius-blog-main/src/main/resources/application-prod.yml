@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/geniusblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+    url: ENC(6NYFsI49EJxuJkz2J6efNBcvgoE3IrJuTltwfqm4ZR5rBshWlcOtklfTr1eo0YvlzYCR4oj5+Q5QIvFYNjQJqiA71FhV0jjafjzPtGsAHV7XCQZum4QjXiQHLFaRasag50rbJs+Y9JzHjBF+AO8VlZPl2TGQcUsZKKqE5ZdGes+VbE8A1whStA==)
     username: ENC(WyYk4LMI3u65sr7IMGC0TK++FAi7768n)
-    password: ENC(WyYk4LMI3u65sr7IMGC0TK++FAi7768n)
+    password: ENC(jWAujZXET7lJ51VWnd5D2S3zb+YIc21xac6FmkViGaBOE2JvRL0Gtg==)
   application:
     name: genius-blog-main
 

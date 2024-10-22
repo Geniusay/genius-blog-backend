@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+you-cant-see-that.yml
+application-dev.yml
+JasyptUtil.*

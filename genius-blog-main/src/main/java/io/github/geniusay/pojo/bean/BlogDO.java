@@ -12,6 +12,7 @@ import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import io.github.constant.TimeConstant;
 import io.github.geniusay.constant.dbTableName;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -28,12 +29,11 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @NoArgsConstructor
 @TableName(value = dbTableName.BLOG)
+@Builder
 public class BlogDO {
 
-    @TableId(value = "id")
-    @TableField(updateStrategy = FieldStrategy.NEVER)
-    private Long id;
 
+    @TableId(value = "blog_id")
     @TableField(updateStrategy = FieldStrategy.NEVER)
     private Long blogId;
 
@@ -60,11 +60,11 @@ public class BlogDO {
     @JsonFormat(pattern = TimeConstant.YMD_HMS, timezone = "GMT+8")
     private LocalDateTime updateAt;
 
-    public List<Integer> getTags(){
-        List<Integer> tags = new ArrayList<>();
+    public List<Long> longTags(){
+        List<Long> tags = new ArrayList<>();
         if(StringUtils.hasText(this.tags)){
-            String[] split = this.tags.split(",");
-            tags = Arrays.stream(split).map(Integer::parseInt).collect(Collectors.toList());
+            String[] split = this.tags.split(";");
+            tags = Arrays.stream(split).map(Long::parseLong).collect(Collectors.toList());
         }
         return tags;
     }
