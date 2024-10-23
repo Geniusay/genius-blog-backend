@@ -29,22 +29,22 @@ jobs:
             uses: actions/setup-node@v2
             with:
               node-version: '16'
-          - name: Cache pnpm modules
-            uses: actions/cache@v2
-            with:
-              path: ~/.pnpm-store
-              key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-              restore-keys: |
-                ${{ runner.os }}-pnpm-
-          - name: Install pnpm
-            working-directory: genius-blog-front
-            run: npm install -g pnpm
+#          - name: Cache pnpm modules
+#            uses: actions/cache@v2
+#            with:
+#              path: ~/.pnpm-store
+#              key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+#              restore-keys: |
+#                ${{ runner.os }}-pnpm-
+#          - name: Install pnpm
+#            working-directory: genius-blog-front
+#            run: npm install -g pnpm
           - name: Install Dependencies
             working-directory: genius-blog-front
-            run: pnpm install
+            run: npm install
           - name: Build Frontend
             working-directory: genius-blog-front
-            run: pnpm build
+            run: npm run build
           - name: Log in to Docker Hub
             run: docker login -u ${{ secrets.DOCKER_REPO }} -p ${{ secrets.DOCKER_PWD }}
 
