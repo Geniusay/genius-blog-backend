@@ -39,12 +39,15 @@ jobs:
 #          - name: Install pnpm
 #            working-directory: genius-blog-front
 #            run: npm install -g pnpm
+          - name: Install Yarn
+            working-directory: genius-blog-front
+            run: npm install -g yarn
           - name: Install Dependencies
             working-directory: genius-blog-front
-            run: npm install
+            run: yarn install
           - name: Build Frontend
             working-directory: genius-blog-front
-            run: npm run build
+            run: yarn build
           - name: Log in to Docker Hub
             run: docker login -u ${{ secrets.DOCKER_REPO }} -p ${{ secrets.DOCKER_PWD }}
 
