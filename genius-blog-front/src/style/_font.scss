@@ -1,0 +1,153 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+/**
+ * RECOLETA FONT
+ */
+
+@font-face {
+    font-family: 'Recoleta';
+    src: local('Recoleta Light'), local('Recoleta-Light'),
+        url('@/assets/font/recoleta/Recoleta-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: local('Recoleta Regular'), local('Recoleta-Regular'),
+        url('@/assets/font/recoleta/Recoleta-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/**
+ * GORDITA FONT
+ */
+
+@font-face {
+    font-family: 'Gordita';
+    src: local('Gordita Light'), local('Gordita-Light'),
+        url('@/assets/font/gordita/Gordita-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita';
+    src: local('Gordita Regular'), local('Gordita-Regular'),
+        url('@/assets/font/gordita/Gordita-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita';
+    src: local('Gordita Italic'), local('Gordita-Italic'),
+        url('@/assets/font/gordita/Gordita-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita';
+    src: local('Gordita Medium'), local('Gordita-Medium'),
+        url('@/assets/font/gordita/Gordita-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Editorial Old';
+    src: url('@/assets/font/editorial-old/ppeditorialold-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+* Neue Montreal
+*/
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('@/assets/font/neue-montreal/PPNeueMontreal-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+*  Monorama
+*/
+@font-face {
+    font-family: 'Monorama';
+    src: url('@/assets/font/monorama/Monorama-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+*  Lexa
+*/
+@font-face {
+    font-family: 'Lexa';
+    src: url('@/assets/font/lexa/lexa.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+* 港风字体
+*/
+@font-face {
+    font-family: 'GFST';
+    src: url('@/assets/font/gfst/GFST-2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Torwelten*/
+@font-face {
+    font-family: 'Torwelten';
+    src: url('@/assets/font/torwelten/TorweltenMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+数码风格
+*/
+
+@font-face {
+    font-family: 'ZKSM';
+    src: url('@/assets/font/zksm/ZhengQingKeShuMaTi-2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk';
+    src: url('@/assets/font/sharp-grotesk/sharp-grotesk-medium-25-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Migra';
+    src: url('@/assets/font/migra/Migra-Extrabold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
