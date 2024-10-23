@@ -44,7 +44,7 @@ jobs:
             run: npm install -g yarn
           - name: Install Dependencies
             working-directory: genius-blog-front
-            run: yarn install
+            run: yarn install --ignore-engines
           - name: Build Frontend
             working-directory: genius-blog-front
             run: yarn build
