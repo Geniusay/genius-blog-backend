@@ -7,7 +7,6 @@ on:
       -
 jobs:
     build-frontend:
-        if: github.event.pull_request.merged == true
         runs-on: ubuntu-latest
         environment:
           name: FRONT_END_ENV
