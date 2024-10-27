@@ -2,7 +2,7 @@ import axios from "axios";
 import { useSnackbarStore } from "@/stores/snackbarStore";
 
 const request = axios.create({
-  baseURL: "http://124.71.72.118:9000",
+  baseURL: "/appApi",
   timeout: 100000,
 });
 
